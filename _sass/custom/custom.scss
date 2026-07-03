@@ -1,71 +1,40 @@
 // AxoMMO Wiki — dark purple theme
-// Overrides just-the-docs CSS variables
+// Direct CSS overrides with !important for reliable compilation
 
-// Base colors
-$body-background-color: #0a0a0f;
-$sidebar-color: #12101e;
-$body-text-color: #d1d5e0;
-$body-heading-color: #f1f5f9;
-$child-navigation-border-color: #2d2a44;
-
-// Links — purple accent
-$link-color: #a855f7;
-$link-color-hover: #c084fc;
-$nav-child-link-color: #8884a0;
-$nav-child-link-color-hover: #a855f7;
-
-// Code & pre
-$code-background-color: #141128;
-$pre-background-color: #141128;
-
-// Borders
-$border-color: #2d2a44;
-
-// Sidebar & search
-$search-background-color: #0a0a0f;
-$search-result-padding: 0.5rem;
-$base-button-color: #1e1b30;
-
-// Tables
-$table-background-color: #12101e;
-$table-border-color: #2d2a44;
-
-// Buttons
-$btn-primary-color: #7c3aed;
-
-// Main header
-$feedback-color: darken(#12101e, 2%);
-
-// Typography
-$font-family-base: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-
-// Layout
-$content-width: 1000px;
+// HTML & body
+html {
+  background-color: #0a0a0f !important;
+}
+body {
+  background-color: #0a0a0f !important;
+}
 
 // Sidebar
 .side-bar {
-  border-right: 1px solid #1e1b30;
+  background-color: #12101e !important;
+  border-right: 1px solid #1e1b30 !important;
+}
+
+.site-header {
+  background-color: #12101e !important;
 }
 
 .site-title {
-  background: linear-gradient(135deg, #a855f7 0%, #7c3aed 50%, #6366f1 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: 800;
+  background: linear-gradient(135deg, #a855f7 0%, #7c3aed 50%, #6366f1 100%) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  font-weight: 800 !important;
   font-size: 1.4rem !important;
-  letter-spacing: -0.5px;
+  letter-spacing: -0.5px !important;
   padding-top: 1rem !important;
   padding-bottom: 1rem !important;
 }
 
-.site-title:hover {
-  opacity: 0.9;
-}
-
+// Main header & search
 .main-header {
   background-color: #12101e !important;
-  border-bottom: 1px solid #1e1b30;
+  border-bottom: 1px solid #1e1b30 !important;
 }
 
 .search-input {
@@ -80,9 +49,15 @@ $content-width: 1000px;
 }
 
 .search-icon {
-  color: #8884a0;
+  color: #8884a0 !important;
 }
 
+// Main content area
+.main-content-wrap {
+  background-color: #0a0a0f !important;
+}
+
+// Navigation
 .nav-list .nav-list-item .nav-list-link {
   color: #8884a0;
   transition: color 0.15s ease;
@@ -99,8 +74,9 @@ $content-width: 1000px;
   border-radius: 4px;
 }
 
+// Headings
 h1, h2, h3, h4, h5, h6 {
-  color: #f1f5f9;
+  color: #f1f5f9 !important;
 }
 
 h2 {
@@ -108,6 +84,7 @@ h2 {
   padding-bottom: 0.3rem;
 }
 
+// Links
 a {
   color: #a855f7;
   &:hover {
@@ -115,45 +92,43 @@ a {
   }
 }
 
+// Tables
 table {
-  background: #12101e;
-  border: 1px solid #2d2a44;
+  background: #12101e !important;
+  border: 1px solid #2d2a44 !important;
   border-radius: 6px;
   thead {
-    background: #1a1530;
+    background: #1a1530 !important;
     th {
-      border-bottom: 2px solid #2d2a44;
-      color: #a855f7;
-      font-weight: 600;
+      border-bottom: 2px solid #2d2a44 !important;
+      color: #a855f7 !important;
+      font-weight: 600 !important;
     }
   }
   td, th {
-    border: 1px solid #2d2a44;
+    border: 1px solid #2d2a44 !important;
   }
   tr:nth-child(even) {
-    background: #16132a;
+    background: #16132a !important;
   }
 }
 
+// Code
 code {
-  background: #141128;
-  border: 1px solid #2d2a44;
-  color: #f1f5f9;
+  background: #141128 !important;
+  border: 1px solid #2d2a44 !important;
+  color: #f1f5f9 !important;
 }
 
 .highlight {
-  background: #141128;
-  border: 1px solid #2d2a44;
+  background: #141128 !important;
+  border: 1px solid #2d2a44 !important;
 }
 
-.main-content {
-  ol, ul {
-    li {
-      &::before {
-        color: #a855f7;
-      }
-    }
-  }
+// List bullets
+.main-content ol li::before,
+.main-content ul li::before {
+  color: #a855f7 !important;
 }
 
 // Scrollbar
@@ -184,101 +159,94 @@ code {
 
 // Search results
 .search-results {
-  background-color: #12101e;
-  border: 1px solid #2d2a44;
+  background-color: #12101e !important;
+  border: 1px solid #2d2a44 !important;
 }
 
 .search-result {
-  background-color: #1a1530;
-  border-bottom: 1px solid #2d2a44;
+  background-color: #1a1530 !important;
+  border-bottom: 1px solid #2d2a44 !important;
   &:hover, &.active {
-    background-color: #221e3a;
+    background-color: #221e3a !important;
   }
   .search-result-title {
-    color: #a855f7;
+    color: #a855f7 !important;
   }
 }
 
 // Site footer
 .site-footer {
-  color: #8884a0;
-  border-top: 1px solid #1e1b30;
+  color: #8884a0 !important;
+  border-top: 1px solid #1e1b30 !important;
   a {
-    color: #a855f7;
+    color: #a855f7 !important;
   }
 }
 
 // Blockquote
 blockquote {
-  border-left: 4px solid #a855f7;
-  background: #141128;
-  padding: 0.5rem 1rem;
-  color: #8884a0;
+  border-left: 4px solid #a855f7 !important;
+  background: #141128 !important;
+  padding: 1rem !important;
+  color: #8884a0 !important;
 }
 
 // Horizontal rule
 hr {
-  border-color: #1e1b30;
-}
-
-// Labels & badges
-.label {
-  background: #a855f7;
-  color: #0a0a0f;
-}
-
-.label-green {
-  background: #238636;
-}
-.label-blue {
-  background: #1f6feb;
-}
-.label-purple {
-  background: #7c3aed;
+  border-color: #1e1b30 !important;
 }
 
 // Buttons
 .btn {
-  background: #1e1b30;
-  border: 1px solid #2d2a44;
-  color: #d1d5e0;
+  background: #1e1b30 !important;
+  border: 1px solid #2d2a44 !important;
+  color: #d1d5e0 !important;
   &:hover {
-    background: #2d2a44;
+    background: #2d2a44 !important;
   }
 }
 
 .btn-primary {
-  background: #7c3aed;
-  border-color: #7c3aed;
-  color: #0a0a0f;
+  background: #7c3aed !important;
+  border-color: #7c3aed !important;
+  color: #0a0a0f !important;
   &:hover {
-    background: #a855f7;
-    border-color: #a855f7;
+    background: #a855f7 !important;
+    border-color: #a855f7 !important;
   }
 }
 
-// Main content area
-.main-content-wrap {
-  background-color: $body-background-color;
-}
-
-// Aux links (top right)
+// Aux links
 .aux-nav-list .aux-nav-list-item .site-button {
-  color: #8884a0;
+  color: #8884a0 !important;
   &:hover {
-    color: #a855f7;
+    color: #a855f7 !important;
   }
 }
 
 // Breadcrumb
 .breadcrumb-nav-list-item {
-  color: #8884a0;
+  color: #8884a0 !important;
   a {
-    color: #a855f7;
+    color: #a855f7 !important;
   }
 }
 
-// Code blocks with line numbers
+// Code gutter
 .highlight .rouge-gutter {
-  border-right: 1px solid #2d2a44;
+  border-right: 1px solid #2d2a44 !important;
+}
+
+// Skip to main link
+a.skip-to-main:focus,
+a.skip-to-main:active {
+  color: #a855f7 !important;
+  background-color: #12101e !important;
+  border-color: #a855f7 !important;
+}
+
+// Labels
+.label {
+  background: #a855f7 !important;
+  color: #0a0a0f !important;
 }
