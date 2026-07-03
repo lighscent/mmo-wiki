@@ -6,5 +6,8 @@ nav_order: 8
 
 # TODO
 
-- Changer le fonctionnement des intérêts (pas de minimum sur le solde)
-- Custom items
+Fonctionnalités à venir :
+
+- Amélioration du système d'intérêts
+- Objets customs
+- Nouveaux métiers
