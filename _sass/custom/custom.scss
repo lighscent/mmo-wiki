@@ -1,252 +1,235 @@
-// AxoMMO Wiki — dark purple theme
-// Direct CSS overrides with !important for reliable compilation
+// AxoMMO Wiki — clean light theme
 
-// HTML & body
+// Reset to light defaults
 html {
-  background-color: #0a0a0f !important;
+  background-color: #ffffff !important;
 }
 body {
-  background-color: #0a0a0f !important;
+  background-color: #ffffff !important;
 }
 
 // Sidebar
 .side-bar {
-  background-color: #12101e !important;
-  border-right: 1px solid #1e1b30 !important;
+  background-color: #f8f9fa !important;
+  border-right: 1px solid #e9ecef !important;
 }
 
 .site-header {
-  background-color: #12101e !important;
+  background-color: #f8f9fa !important;
 }
 
 .site-title {
-  background: linear-gradient(135deg, #a855f7 0%, #7c3aed 50%, #6366f1 100%) !important;
-  -webkit-background-clip: text !important;
-  background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
-  font-weight: 800 !important;
-  font-size: 1.4rem !important;
-  letter-spacing: -0.5px !important;
+  color: #1a1a2e !important;
+  font-weight: 700 !important;
+  font-size: 1.3rem !important;
   padding-top: 1rem !important;
   padding-bottom: 1rem !important;
+  background: none !important;
+  -webkit-background-clip: unset !important;
+  background-clip: unset !important;
+  -webkit-text-fill-color: unset !important;
 }
 
 // Main header & search
 .main-header {
-  background-color: #12101e !important;
-  border-bottom: 1px solid #1e1b30 !important;
+  background-color: #ffffff !important;
+  border-bottom: 1px solid #e9ecef !important;
 }
 
 .search-input {
-  background-color: #0a0a0f !important;
-  border: 1px solid #2d2a44 !important;
-  color: #d1d5e0 !important;
+  background-color: #ffffff !important;
+  border: 1px solid #dee2e6 !important;
+  color: #495057 !important;
 }
 
 .search-input:focus {
-  border-color: #a855f7 !important;
-  box-shadow: 0 0 0 1px #a855f7 !important;
+  border-color: #4a6cf7 !important;
+  box-shadow: 0 0 0 2px rgba(74, 108, 247, 0.15) !important;
 }
 
 .search-icon {
-  color: #8884a0 !important;
+  color: #adb5bd !important;
 }
 
-// Main content area
+// Main content
 .main-content-wrap {
-  background-color: #0a0a0f !important;
+  background-color: #ffffff !important;
 }
 
 // Navigation
 .nav-list .nav-list-item .nav-list-link {
-  color: #8884a0;
+  color: #495057;
   transition: color 0.15s ease;
+  border-radius: 4px;
 }
 
 .nav-list .nav-list-item .nav-list-link:hover,
 .nav-list .nav-list-item .nav-list-link.active {
-  color: #a855f7;
+  color: #4a6cf7;
+  background: rgba(74, 108, 247, 0.06);
 }
 
 .nav-list .nav-list-item .nav-list-link.active {
   font-weight: 600;
-  background: rgba(168, 85, 247, 0.1);
-  border-radius: 4px;
 }
 
 // Headings
 h1, h2, h3, h4, h5, h6 {
-  color: #f1f5f9 !important;
+  color: #1a1a2e !important;
 }
 
 h2 {
-  border-bottom: 1px solid #1e1b30;
+  border-bottom: 1px solid #e9ecef;
   padding-bottom: 0.3rem;
 }
 
 // Links
 a {
-  color: #a855f7;
+  color: #4a6cf7;
   &:hover {
-    color: #c084fc;
+    color: #3b5de7;
   }
 }
 
 // Tables
 table {
-  background: #12101e !important;
-  border: 1px solid #2d2a44 !important;
+  background: #ffffff !important;
+  border: 1px solid #dee2e6 !important;
   border-radius: 6px;
   thead {
-    background: #1a1530 !important;
+    background: #f8f9fa !important;
     th {
-      border-bottom: 2px solid #2d2a44 !important;
-      color: #a855f7 !important;
+      border-bottom: 2px solid #dee2e6 !important;
+      color: #1a1a2e !important;
       font-weight: 600 !important;
     }
   }
   td, th {
-    border: 1px solid #2d2a44 !important;
+    border: 1px solid #dee2e6 !important;
   }
   tr:nth-child(even) {
-    background: #16132a !important;
+    background: #f8f9fa !important;
   }
 }
 
 // Code
 code {
-  background: #141128 !important;
-  border: 1px solid #2d2a44 !important;
-  color: #f1f5f9 !important;
+  background: #f1f3f5 !important;
+  border: 1px solid #e9ecef !important;
+  color: #e03131 !important;
 }
 
 .highlight {
-  background: #141128 !important;
-  border: 1px solid #2d2a44 !important;
+  background: #f8f9fa !important;
+  border: 1px solid #e9ecef !important;
 }
 
 // List bullets
 .main-content ol li::before,
 .main-content ul li::before {
-  color: #a855f7 !important;
-}
-
-// Scrollbar
-::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}
-::-webkit-scrollbar-track {
-  background: #0a0a0f;
-}
-::-webkit-scrollbar-thumb {
-  background: #2d2a44;
-  border-radius: 4px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #3d3a5e;
-}
-
-// Selection
-::selection {
-  background: rgba(168, 85, 247, 0.3);
+  color: #4a6cf7 !important;
 }
 
 // Opaque overlay
 .opaque {
-  background-color: #12101e !important;
+  background-color: #f8f9fa !important;
 }
 
 // Search results
 .search-results {
-  background-color: #12101e !important;
-  border: 1px solid #2d2a44 !important;
+  background-color: #ffffff !important;
+  border: 1px solid #dee2e6 !important;
 }
 
 .search-result {
-  background-color: #1a1530 !important;
-  border-bottom: 1px solid #2d2a44 !important;
+  background-color: #ffffff !important;
+  border-bottom: 1px solid #e9ecef !important;
   &:hover, &.active {
-    background-color: #221e3a !important;
+    background-color: #f8f9fa !important;
   }
   .search-result-title {
-    color: #a855f7 !important;
+    color: #4a6cf7 !important;
   }
 }
 
 // Site footer
 .site-footer {
-  color: #8884a0 !important;
-  border-top: 1px solid #1e1b30 !important;
+  color: #868e96 !important;
+  border-top: 1px solid #e9ecef !important;
   a {
-    color: #a855f7 !important;
+    color: #4a6cf7 !important;
   }
 }
 
 // Blockquote
 blockquote {
-  border-left: 4px solid #a855f7 !important;
-  background: #141128 !important;
+  border-left: 4px solid #4a6cf7 !important;
+  background: #f8f9fa !important;
   padding: 1rem !important;
-  color: #8884a0 !important;
+  color: #495057 !important;
 }
 
 // Horizontal rule
 hr {
-  border-color: #1e1b30 !important;
+  border-color: #e9ecef !important;
 }
 
 // Buttons
 .btn {
-  background: #1e1b30 !important;
-  border: 1px solid #2d2a44 !important;
-  color: #d1d5e0 !important;
+  background: #ffffff !important;
+  border: 1px solid #dee2e6 !important;
+  color: #495057 !important;
   &:hover {
-    background: #2d2a44 !important;
+    background: #f8f9fa !important;
   }
 }
 
 .btn-primary {
-  background: #7c3aed !important;
-  border-color: #7c3aed !important;
-  color: #0a0a0f !important;
+  background: #4a6cf7 !important;
+  border-color: #4a6cf7 !important;
+  color: #ffffff !important;
   &:hover {
-    background: #a855f7 !important;
-    border-color: #a855f7 !important;
+    background: #3b5de7 !important;
+    border-color: #3b5de7 !important;
   }
 }
 
 // Aux links
 .aux-nav-list .aux-nav-list-item .site-button {
-  color: #8884a0 !important;
+  color: #868e96 !important;
   &:hover {
-    color: #a855f7 !important;
+    color: #4a6cf7 !important;
   }
 }
 
 // Breadcrumb
 .breadcrumb-nav-list-item {
-  color: #8884a0 !important;
+  color: #868e96 !important;
   a {
-    color: #a855f7 !important;
+    color: #4a6cf7 !important;
   }
 }
 
 // Code gutter
 .highlight .rouge-gutter {
-  border-right: 1px solid #2d2a44 !important;
+  border-right: 1px solid #e9ecef !important;
 }
 
 // Skip to main link
 a.skip-to-main:focus,
 a.skip-to-main:active {
-  color: #a855f7 !important;
-  background-color: #12101e !important;
-  border-color: #a855f7 !important;
+  color: #ffffff !important;
+  background-color: #4a6cf7 !important;
+  border-color: #4a6cf7 !important;
 }
 
 // Labels
 .label {
-  background: #a855f7 !important;
-  color: #0a0a0f !important;
+  background: #4a6cf7 !important;
+  color: #ffffff !important;
+}
+
+// Selection
+::selection {
+  background: rgba(74, 108, 247, 0.2);
 }
