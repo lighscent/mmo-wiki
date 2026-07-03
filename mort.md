@@ -1,3 +1,9 @@
+---
+title: Mort & /back
+layout: default
+nav_order: 6
+---
+
 # Mort & `/back`
 
 - Chaque mort est enregistrée en DB avec monde, coordonnées et cause

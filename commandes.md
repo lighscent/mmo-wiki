@@ -1,3 +1,9 @@
+---
+title: Commandes
+layout: default
+nav_order: 2
+---
+
 # Commandes
 
 | Commande | Description | Alias |

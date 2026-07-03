@@ -1,3 +1,9 @@
+---
+title: Métiers
+layout: default
+nav_order: 7
+---
+
 # Métiers
 
 ## Mineur

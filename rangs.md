@@ -1,3 +1,9 @@
+---
+title: Rangs & Permissions
+layout: default
+nav_order: 3
+---
+
 # Rangs & Permissions
 
 ## Permissions

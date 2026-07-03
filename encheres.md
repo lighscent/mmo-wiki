@@ -1,3 +1,9 @@
+---
+title: Enchères
+layout: default
+nav_order: 5
+---
+
 # Enchères (`/ah`)
 
 - Vendez et achetez des items via le GUI
