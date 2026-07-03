@@ -25,6 +25,3 @@ nav_order: 2
 | `/ah <recherche>` | Cherche un item par nom | |
 | `/ah return` | Récupère les items invendus expirés | |
 | `/back` | Téléportation à l'emplacement de votre mort (liste pour VIP/ULTIME) | |
-| `/death-list <joueur>` | (Staff) Liste toutes les morts d'un joueur avec coordonnées cliquables | |
-| `/axommo reload` | (OP) Recharge la config | |
-| `/mobcap` | (Staff) Affiche l'utilisation du mob cap par joueur | |

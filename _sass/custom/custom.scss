@@ -1,40 +1,40 @@
-// AxoMMO Wiki — custom dark theme
+// AxoMMO Wiki — dark purple theme
 // Overrides just-the-docs CSS variables
 
 // Base colors
-$body-background-color: #0d1117;
-$sidebar-color: #161b22;
-$body-text-color: #c9d1d9;
-$body-heading-color: #f0f6fc;
-$child-navigation-border-color: #30363d;
+$body-background-color: #0a0a0f;
+$sidebar-color: #12101e;
+$body-text-color: #d1d5e0;
+$body-heading-color: #f1f5f9;
+$child-navigation-border-color: #2d2a44;
 
-// Links — gold accent
-$link-color: #ffaa00;
-$link-color-hover: #ffc44d;
-$nav-child-link-color: #8b949e;
-$nav-child-link-color-hover: #ffaa00;
+// Links — purple accent
+$link-color: #a855f7;
+$link-color-hover: #c084fc;
+$nav-child-link-color: #8884a0;
+$nav-child-link-color-hover: #a855f7;
 
 // Code & pre
-$code-background-color: #1c2128;
-$pre-background-color: #1c2128;
+$code-background-color: #141128;
+$pre-background-color: #141128;
 
 // Borders
-$border-color: #30363d;
+$border-color: #2d2a44;
 
 // Sidebar & search
-$search-background-color: #0d1117;
+$search-background-color: #0a0a0f;
 $search-result-padding: 0.5rem;
-$base-button-color: #21262d;
+$base-button-color: #1e1b30;
 
 // Tables
-$table-background-color: #161b22;
-$table-border-color: #30363d;
+$table-background-color: #12101e;
+$table-border-color: #2d2a44;
 
 // Buttons
-$btn-primary-color: #ffaa00;
+$btn-primary-color: #7c3aed;
 
 // Main header
-$feedback-color: darken(#161b22, 3%);
+$feedback-color: darken(#12101e, 2%);
 
 // Typography
 $font-family-base: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
@@ -42,13 +42,13 @@ $font-family-base: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helve
 // Layout
 $content-width: 1000px;
 
-// Sidebar link styling
+// Sidebar
 .side-bar {
-  border-right: 1px solid #21262d;
+  border-right: 1px solid #1e1b30;
 }
 
 .site-title {
-  background: linear-gradient(135deg, #ffaa00 0%, #ff8800 100%);
+  background: linear-gradient(135deg, #a855f7 0%, #7c3aed 50%, #6366f1 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -64,89 +64,93 @@ $content-width: 1000px;
 }
 
 .main-header {
-  background-color: #161b22 !important;
-  border-bottom: 1px solid #21262d;
+  background-color: #12101e !important;
+  border-bottom: 1px solid #1e1b30;
 }
 
 .search-input {
-  background-color: #0d1117 !important;
-  border: 1px solid #30363d !important;
-  color: #c9d1d9 !important;
+  background-color: #0a0a0f !important;
+  border: 1px solid #2d2a44 !important;
+  color: #d1d5e0 !important;
 }
 
 .search-input:focus {
-  border-color: #ffaa00 !important;
-  box-shadow: 0 0 0 1px #ffaa00 !important;
+  border-color: #a855f7 !important;
+  box-shadow: 0 0 0 1px #a855f7 !important;
+}
+
+.search-icon {
+  color: #8884a0;
 }
 
 .nav-list .nav-list-item .nav-list-link {
-  color: #8b949e;
+  color: #8884a0;
   transition: color 0.15s ease;
 }
 
 .nav-list .nav-list-item .nav-list-link:hover,
 .nav-list .nav-list-item .nav-list-link.active {
-  color: #ffaa00;
+  color: #a855f7;
 }
 
 .nav-list .nav-list-item .nav-list-link.active {
   font-weight: 600;
-  background: rgba(255, 170, 0, 0.08);
+  background: rgba(168, 85, 247, 0.1);
   border-radius: 4px;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #f0f6fc;
+  color: #f1f5f9;
 }
 
 h2 {
-  border-bottom: 1px solid #21262d;
+  border-bottom: 1px solid #1e1b30;
   padding-bottom: 0.3rem;
 }
 
 a {
-  color: #ffaa00;
+  color: #a855f7;
   &:hover {
-    color: #ffc44d;
+    color: #c084fc;
   }
 }
 
 table {
-  background: #161b22;
-  border: 1px solid #30363d;
+  background: #12101e;
+  border: 1px solid #2d2a44;
   border-radius: 6px;
   thead {
-    background: #1c2128;
+    background: #1a1530;
     th {
-      border-bottom: 2px solid #30363d;
-      color: #ffaa00;
+      border-bottom: 2px solid #2d2a44;
+      color: #a855f7;
       font-weight: 600;
     }
   }
   td, th {
-    border: 1px solid #30363d;
+    border: 1px solid #2d2a44;
   }
   tr:nth-child(even) {
-    background: #1a1f26;
+    background: #16132a;
   }
 }
 
 code {
-  background: #1c2128;
-  border: 1px solid #30363d;
-  color: #f0f6fc;
+  background: #141128;
+  border: 1px solid #2d2a44;
+  color: #f1f5f9;
 }
 
 .highlight {
-  background: #1c2128;
-  border: 1px solid #30363d;
+  background: #141128;
+  border: 1px solid #2d2a44;
 }
 
 .main-content {
   ol, ul {
     li {
       &::before {
-        color: #ffaa00;
+        color: #a855f7;
       }
     }
   }
@@ -158,69 +162,69 @@ code {
   height: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #0d1117;
+  background: #0a0a0f;
 }
 ::-webkit-scrollbar-thumb {
-  background: #30363d;
+  background: #2d2a44;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #484f58;
+  background: #3d3a5e;
 }
 
 // Selection
 ::selection {
-  background: rgba(255, 170, 0, 0.3);
+  background: rgba(168, 85, 247, 0.3);
 }
 
 // Opaque overlay
 .opaque {
-  background-color: #161b22 !important;
+  background-color: #12101e !important;
 }
 
 // Search results
 .search-results {
-  background-color: #161b22;
-  border: 1px solid #30363d;
+  background-color: #12101e;
+  border: 1px solid #2d2a44;
 }
 
 .search-result {
-  background-color: #1c2128;
-  border-bottom: 1px solid #30363d;
+  background-color: #1a1530;
+  border-bottom: 1px solid #2d2a44;
   &:hover, &.active {
-    background-color: #21262d;
+    background-color: #221e3a;
   }
   .search-result-title {
-    color: #ffaa00;
+    color: #a855f7;
   }
 }
 
 // Site footer
 .site-footer {
-  color: #8b949e;
-  border-top: 1px solid #21262d;
+  color: #8884a0;
+  border-top: 1px solid #1e1b30;
   a {
-    color: #ffaa00;
+    color: #a855f7;
   }
 }
 
 // Blockquote
 blockquote {
-  border-left: 4px solid #ffaa00;
-  background: #1c2128;
+  border-left: 4px solid #a855f7;
+  background: #141128;
   padding: 0.5rem 1rem;
-  color: #8b949e;
+  color: #8884a0;
 }
 
 // Horizontal rule
 hr {
-  border-color: #30363d;
+  border-color: #1e1b30;
 }
 
 // Labels & badges
 .label {
-  background: #ffaa00;
-  color: #0d1117;
+  background: #a855f7;
+  color: #0a0a0f;
 }
 
 .label-green {
@@ -230,26 +234,26 @@ hr {
   background: #1f6feb;
 }
 .label-purple {
-  background: #8957e5;
+  background: #7c3aed;
 }
 
 // Buttons
 .btn {
-  background: #21262d;
-  border: 1px solid #30363d;
-  color: #c9d1d9;
+  background: #1e1b30;
+  border: 1px solid #2d2a44;
+  color: #d1d5e0;
   &:hover {
-    background: #30363d;
+    background: #2d2a44;
   }
 }
 
 .btn-primary {
-  background: #ffaa00;
-  border-color: #ffaa00;
-  color: #0d1117;
+  background: #7c3aed;
+  border-color: #7c3aed;
+  color: #0a0a0f;
   &:hover {
-    background: #ffc44d;
-    border-color: #ffc44d;
+    background: #a855f7;
+    border-color: #a855f7;
   }
 }
 
@@ -260,21 +264,21 @@ hr {
 
 // Aux links (top right)
 .aux-nav-list .aux-nav-list-item .site-button {
-  color: #8b949e;
+  color: #8884a0;
   &:hover {
-    color: #ffaa00;
+    color: #a855f7;
   }
 }
 
 // Breadcrumb
 .breadcrumb-nav-list-item {
-  color: #8b949e;
+  color: #8884a0;
   a {
-    color: #ffaa00;
+    color: #a855f7;
   }
 }
 
 // Code blocks with line numbers
 .highlight .rouge-gutter {
-  border-right: 1px solid #30363d;
+  border-right: 1px solid #2d2a44;
 }
