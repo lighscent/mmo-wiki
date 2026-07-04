@@ -4,9 +4,9 @@ layout: default
 nav_order: 1
 ---
 
-# AxoMMO Wiki
+# MMO Wiki
 
-Documentation du plugin AxoMMO pour Paper 1.21.1.
+Documentation du plugin MMO pour Paper 1.21.10.
 
 ## Pages
 
